@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family:  'Urbanist', sans-serif;
+}
+body{
+    background: #F6F7FB;
+}
+.strutura{
+    display: grid;
+    grid-template-columns: minmax(120px, 120px) 2fr 2fr minmax(120px, 120px);
+    grid-template-areas: 
+        "header header header header" 
+        "sidnav content content margin"
+        "footer footer  footer  footer"
+    ;
+}
+
+/* Header*/
+.header{
+    grid-area: header;
+    background: #F6F7FB;  
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(120px, 120px) 2fr 2fr minmax(120px, 120px);
+    align-items: center; /*alinha tudo que ta no header ao centro do exio Y*/
+}
+
+.logo {
+    grid-column: 2;
+    margin-left: 20px;
+}
+
+.header nav ul  {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header li + li{
+    margin-left: 30px;
+}
+
+.login a{
+    padding: 5px 20px 5px 20px;
+    background: #393D46;
+    color: #F6F7FB;
+    
+}
+
+
+/* sidnav*/
+
+.sidnav {
+    grid-area: sidnav;
+    padding: 20px;
+    
+}
+
+.numero{
+    margin-top: 60px;
+}
+
+.numero a{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.redes-sociais {
+    margin-top: 100px;
+}
+
+.redes-sociais li{
+    text-align: center;
+}
+
+.redes-sociais li + li {
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+/* content*/
+
+.content{
+    grid-area: content;
+    background: #FFFFFF;
+    display: flex;
+}
+
+
+.content img{
+    grid-column: 2;
+    margin: 0 auto;
+}
+h1{
+    margin: 150px 0px 0px 80px;
+    font-family:  'Urbanist', sans-serif;
+    font-size: 3.25rem;
+    font-weight: 400;
+}
+
+P{
+    margin-left:  80px;
+    width: 300px;
+    line-height: 2em;
+}
+
+.detalhes{
+    margin: 60px 0px 0px 80px;
+    display: flex;
+}
+
+.detalhes span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+
+.preco span + span{
+    font-weight: bold;
+    font-size: 1.125em;
+}
+.corRoupa{
+    margin-left: 50px;
+}
+
+
+.tamanho {
+    margin-left: 50px;
+}
+
+.tamanho a{
+    color: #C3C9D5;
+}
+
+
+
+
+
+
+
+
