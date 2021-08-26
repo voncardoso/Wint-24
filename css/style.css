@@ -7,7 +7,7 @@
     font-family:  'Urbanist', sans-serif;
 }
 body{
-    background: #ffffff;
+    background: #C3C9D5;
 }
 .strutura{
     align-content: center;
@@ -164,7 +164,18 @@ P{
 
 .tamanho a{
     color: #C3C9D5;
+    cursor: pointer;
+    font-weight: 550;
 }
+
+.tamanho a+a{
+    margin-left: 10px;
+}
+
+.tamanho a.ativo{
+    color: #393D46;
+}
+
 
 .comprarAgora{
     display: flex;
