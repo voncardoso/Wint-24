@@ -154,12 +154,56 @@ P{
     font-size: 1.125em;
 }
 .corRoupa{
-    margin-left: 50px;
+    margin-left: 40px;
+}
+
+.corRoupa a {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+    padding: 2px;
+    border-radius: 6px;
+    text-indent: -99;    
+    overflow: hidden; /* O estouro é cortado e o resto do conteúdo ficará invisível*/
+    border-radius: 90%;
+    cursor: pointer;
+}
+
+/* cor da bolinha da roupa */
+.azul {
+    background: #03369C;
+}
+
+.corRoupa a.azul.ativo{
+    margin: 0px;
+    border: 3px solid #03369C;
+    background: #FFFFFF;
+}
+
+.cinza {
+    background: #68778E;
+}
+
+.corRoupa a.cinza.ativo{
+    margin: 0px;
+    border: 3px solid #68778E;
+    background: #FFFFFF;
+}
+
+.preto {
+    background: #393D46;
+}
+
+.corRoupa a.preto.ativo{
+    margin: 0px;
+    border: 3px solid #393D46;
+    background: #FFFFFF;
 }
 
 
 .tamanho {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .tamanho a{
