@@ -78,23 +78,29 @@ body{
     grid-area: sidnav;
     justify-self: end;
     background: #F6F7FB;
-   
     width:120px;
-    
 }
 
 .numero{
-    margin-top: 180px;
+    margin-top: 160px;
 }
 
 .numero a{
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: center;
 }
 
+.linha{
+    height: 40px;
+    width: 2px;
+    margin: 0 auto;
+    padding: 0px;
+    background: #8E9096;
+}
+
 .redes-sociais {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .redes-sociais li{
@@ -230,12 +236,12 @@ P{
     background: #F6F7FB;
     padding: 10px 20px;
     border: 2px solid #393D46;
-    transition: 0.5s;
     color: #393D46;
 }
 
 .comprarAgora button:hover{
     background: #393D46;
+    transition: 0.5s;
     color: #FFFFFF;
     cursor: pointer;
 }
