@@ -64,4 +64,33 @@ tabRoupa.forEach((item, index) =>{
     item.addEventListener('click', () =>{
         console.log(roupaVariante(index));
     })
+});
+
+//const coracao = document.querySelectorAll('.coracao');
+const coracao = document.querySelector('.coracao');
+const coracao1 = document.querySelector('.coracao1');
+
+function activeCoracao(){
+    coracao1.classList.toggle('ativo');
+}
+
+coracao.addEventListener('click', () =>{
+    coracao.classList.toggle('ativo');
+    activeCoracao();
 })
+
+
+function activeCoracao2(){
+    coracao.classList.toggle('ativo');
+}
+
+coracao1.addEventListener('click', () =>{
+    coracao1.classList.toggle('ativo');
+    activeCoracao2();
+})
+
+//coracao.forEach((item) =>{
+  //  item.addEventListener('click', () =>{
+  //      item.classList.toggle('ativo');
+  //  });
+//})

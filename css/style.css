@@ -61,6 +61,10 @@ body{
 .header li + li{
     margin-left: 30px;
 }
+/* animação do coraçao*/
+.coracao.ativo {
+    background: url("../img/icones/coracaoPreto.svg");
+}
 
 .login a{
     padding: 5px 20px 5px 20px;
@@ -272,6 +276,10 @@ P{
 .comprarAgora li + li{
     margin-left: 20px;
     
+}
+
+.coracao1.ativo {
+    background: url("../img/icones/coracaoPreto.svg");
 }
 
 
