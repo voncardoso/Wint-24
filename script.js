@@ -7,6 +7,8 @@ console.log(roupaVariante);
 
 tabTamanho[1].classList.add('ativo');
 tabCor[1].classList.add('ativo');
+tabRoupa[0].classList.add('ativo');
+tabLinha[0].classList.add('ativo1');
 
 // ativar o tamnho da roupa;
 function activeTab(index){
