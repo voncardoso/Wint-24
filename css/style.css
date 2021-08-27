@@ -85,6 +85,7 @@ body{
 
 .numero{
     margin-top: 160px;
+    cursor: pointer;
 }
 
 .numero a{
@@ -92,19 +93,28 @@ body{
     margin-top: 10px;
     justify-content: center;
     font-weight: 600;
-    font-size: 1.125rem;
-    color: #3D414A;
+    font-size: 0.875rem;
+    color: rgb(57, 61, 70, 0.15);
 }
-
-
 
 .linha{
     height: 40px;
     width: 2px;
     margin: 0 auto;
     padding: 0px;
-    background: #3D414A;
+    background: rgb(57, 61, 70, 0.15);
 }
+
+.numero .ativo {
+    font-size: 1.125rem;
+    color: rgb(57, 61, 70, 0.8);
+}
+
+.numero .linha.ativo1{
+   background: rgb(57, 61, 70, 0.8);
+}
+
+
 
 .redes-sociais {
     margin-top: 40px;
