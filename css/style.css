@@ -3,7 +3,7 @@
     padding: 0px;
     list-style: none;
     text-decoration: none;
-    color: #000;
+    color: #3D414A;
     font-family:  'Urbanist', sans-serif;
 }
 body{
@@ -47,6 +47,8 @@ body{
 .logo {
     grid-column: 1;
     margin-left: 20px;
+    color: #393D46;
+    font-weight: bold;
 }
 
 .header nav ul  {
@@ -89,14 +91,19 @@ body{
     display: flex;
     margin-top: 10px;
     justify-content: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #3D414A;
 }
+
+
 
 .linha{
     height: 40px;
     width: 2px;
     margin: 0 auto;
     padding: 0px;
-    background: #8E9096;
+    background: #3D414A;
 }
 
 .redes-sociais {
