@@ -293,3 +293,17 @@ P{
     font-size: 2rem;
     font-weight:lighter;
 }
+
+.footer ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer li+li {
+    margin-left: 10px;
+}
+
+.footer a {
+
+}
+
