@@ -282,4 +282,8 @@ P{
     background: url("../img/icones/coracaoPreto.svg");
 }
 
-
+/* Footer*/
+.footer{
+    grid-area: footer;
+    background: #F6F7FB;
+}
