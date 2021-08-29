@@ -145,6 +145,7 @@ body{
     grid-area: content;
     background: #FFFFFF;
     display: flex;
+    max-width: 960px;
 }
 
 
@@ -297,29 +298,35 @@ P{
 
 .footer ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* faz alinhamneto do primoerio a inicio e do ultimo ao final*/
     margin-top: 20px;
     margin-bottom: 40px;
+    max-width: 960px;
 }
-
 
 
 .footer li a {
     background: #FFFFFF;
-    padding: 11px;
+    padding: 10px;
     display: block;
+    height: 80px;
     width: 80px;
-    height: 104;
+    text-align: center;
     cursor: pointer;
 }
 
-.footer li p{
-    text-align: center;
+.footer  a:hover{
+    background: #393D46;
+    color: #FFFFFF;
 }
 
 .footer a img {
     display: block; /* usa o display block para pode centarlizar a imagem*/
-    margin: 0 auto;
+    margin: 15px auto;
+    align-content: center;
     margin-bottom: 5px;
+    
 }
 
 .footer li a p{
