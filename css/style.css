@@ -290,6 +290,7 @@ P{
 
 .footer h2{
     margin-top: 60px;
+    margin-bottom: 60px;
     font-size: 2rem;
     font-weight:lighter;
 }
@@ -297,13 +298,28 @@ P{
 .footer ul {
     display: flex;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.footer li+li {
-    margin-left: 10px;
+
+
+.footer li a {
+    background: #FFFFFF;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
 }
 
-.footer a {
-
+.footer a img {
+    display: block; /* usa o display block para pode centarlizar a imagem*/
+    margin: 0 auto;
+    margin-bottom: 5px;
 }
+
+.footer li a p{
+    width: auto;
+    margin: 0;
+}
+
+
 
