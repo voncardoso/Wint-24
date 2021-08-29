@@ -305,9 +305,15 @@ P{
 
 .footer li a {
     background: #FFFFFF;
-    padding: 20px;
+    padding: 11px;
     display: block;
+    width: 80px;
+    height: 104;
     cursor: pointer;
+}
+
+.footer li p{
+    text-align: center;
 }
 
 .footer a img {
