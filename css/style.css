@@ -16,7 +16,7 @@ body{
     grid-template-areas: 
         "sidnav header header margin" 
         "sidnav content content margin"
-        "footer footer  footer  footer"
+        "sidnav footer  footer  margin"
     ;
 
 }
