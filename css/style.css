@@ -311,9 +311,13 @@ P{
     padding: 10px;
     display: block;
     height: 80px;
-    width: 80px;
+    width: 81px;
     text-align: center;
     cursor: pointer;
+}
+
+.footer li{
+    margin: 0px;
 }
 
 .footer  a:hover{
@@ -329,9 +333,12 @@ P{
     
 }
 
-.footer li a p{
-    width: auto;
-    margin: 0;
+.shoes img {
+    padding: 10px 0px 0px 0px;
+}
+
+.hart img {
+    padding: 10px 0px 0px 0px;
 }
 
 
