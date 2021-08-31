@@ -22,6 +22,10 @@ body{
     ;
 }
 
+@media(max-width: ){
+    
+}
+
 /* Header*/
 .header{
     grid-area: header;
@@ -145,13 +149,21 @@ body{
 .content{
     grid-area: content;
     background: #FFFFFF;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 960px;
 }
 
 
 .content img{
+    grid-column: 2;
     margin: 0 auto;
+    padding-left: 20px;
+}
+
+.info{
+    grid-column: 1;
+    grid-row: 1; /* faz o item ocupar a primeira linha do grid*/
 }
 h1{
     margin: 150px 0px 0px 80px;
@@ -353,3 +365,12 @@ P{
     color: #FFFFFF;
 }
 
+@media(max-width: 1200px) {
+    .footer ul{
+        justify-content:flex-start;
+    }
+
+    .footer li{
+        margin: 1px;
+    }
+}
