@@ -18,7 +18,6 @@ body{
         "sidnav content content margin"
         "sidnav footer  footer  margin"
     ;
-
 }
 
 /* Header*/
@@ -287,12 +286,13 @@ P{
 .footer{
     grid-area: footer;
     background: #F6F7FB;
+    
 }
 
 .footer h2{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
     font-weight:lighter;
 }
 
@@ -302,7 +302,7 @@ P{
     justify-content: space-between; /* faz alinhamneto do primoerio a inicio e do ultimo ao final*/
     margin-top: 20px;
     margin-bottom: 40px;
-    max-width: 960px;
+    
 }
 
 
@@ -323,7 +323,9 @@ P{
 .footer  a:hover{
     background: #393D46;
     color: #FFFFFF;
+
 }
+
 
 .footer a img {
     display: block; /* usa o display block para pode centarlizar a imagem*/

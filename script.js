@@ -2,6 +2,7 @@ const tabTamanho = document.querySelectorAll('.tamanho a');
 const tabCor = document.querySelectorAll('.corRoupa a');
 const tabRoupa = document.querySelectorAll('.numeraçãoRoupa');
 const tabLinha = document.querySelectorAll('.linha');
+
 console.log(roupaVariante);
 
 
@@ -19,6 +20,12 @@ function activeTab(index){
     tabTamanho[index].classList.add('ativo');
 }
 
+tabTamanho.forEach((intem, index) =>{
+    intem.addEventListener('click', () => {
+        activeTab(index);
+    });
+});
+
 // ativar a cor da roupa
 function activeTabCor(index){
 
@@ -27,6 +34,13 @@ function activeTabCor(index){
     });
     tabCor[index].classList.add('ativo');
 }
+
+tabCor.forEach((intem, index)=>{
+    intem.addEventListener('click', ()=>{
+        activeTabCor(index);
+    })
+})
+
 
 // variante da roupa 
 
@@ -41,22 +55,6 @@ function roupaVariante(index){
     tabRoupa[index].classList.add('ativo');
     tabLinha[index].classList.add('ativo1');
 }
-
-
-
-// ativar o tamnho da roupa;
-tabTamanho.forEach((intem, index) =>{
-    intem.addEventListener('click', () => {
-        activeTab(index);
-    });
-});
-
-// ativar a cor da roupa
-tabCor.forEach((intem, index)=>{
-    intem.addEventListener('click', ()=>{
-        activeTabCor(index);
-    })
-})
 
 // variante da roupa 
 
@@ -94,3 +92,24 @@ coracao1.addEventListener('click', () =>{
   //      item.classList.toggle('ativo');
   //  });
 //})
+
+
+// Ativar o botão da Category
+
+const AtivarCategory = document.querySelectorAll('.footer a');
+
+function Category(index){
+    AtivarCategory.forEach((item) => {
+        item.classList.remove('ativar');
+    });
+    AtivarCategory[index].classList.add('ativar');
+}
+
+AtivarCategory.forEach((item, index) =>{
+    item.addEventListener('click', () => {
+        Category(index);
+    });
+        //item.classList.add('ativo') 
+});
+
+
