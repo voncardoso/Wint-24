@@ -97,12 +97,13 @@ coracao1.addEventListener('click', () =>{
 // Ativar o botão da Category
 
 const AtivarCategory = document.querySelectorAll('.footer a');
+AtivarCategory[1].classList.add('ativo');
 
 function Category(index){
     AtivarCategory.forEach((item) => {
-        item.classList.remove('ativar');
+        item.classList.remove('ativo');
     });
-    AtivarCategory[index].classList.add('ativar');
+    AtivarCategory[index].classList.add('ativo');
 }
 
 AtivarCategory.forEach((item, index) =>{

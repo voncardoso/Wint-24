@@ -313,6 +313,7 @@ P{
     height: 80px;
     width: 81px;
     text-align: center;
+    box-shadow: 
     cursor: pointer;
 }
 
@@ -345,5 +346,8 @@ P{
 
 
 
-
+.footer a.ativo{
+    background: #393D46;
+    color: #FFFFFF;
+}
 
