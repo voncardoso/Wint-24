@@ -22,8 +22,19 @@ body{
     ;
 }
 
-@media(max-width: ){
-    
+@media(max-width: 1205px){
+    .strutura{
+        align-content: center;
+        display: grid;
+        max-width: 1400px;
+        margin: 0 auto;
+        grid-template-columns: minmax(100px, 1fr) 1fr 1fr minmax(100px, 1fr);
+        grid-template-areas: 
+            "sidnav header header margin" 
+            "sidnav content content margin"
+            "sidnav footer  footer  margin"
+        ;
+    }
 }
 
 /* Header*/
@@ -89,7 +100,7 @@ body{
     grid-area: sidnav;
     justify-self: end;
     background: #F6F7FB;
-    width:120px;
+    width: 120px;
 }
 
 .numero{
@@ -155,15 +166,17 @@ body{
 }
 
 
-.content img{
+.modelo{
     grid-column: 2;
     margin: 0 auto;
-    padding-left: 20px;
+    justify-self: end;
+    padding-left: 30px;
 }
 
 .info{
     grid-column: 1;
     grid-row: 1; /* faz o item ocupar a primeira linha do grid*/
+
 }
 h1{
     margin: 150px 0px 0px 80px;
@@ -173,8 +186,9 @@ h1{
 }
 
 P{
+    grid-column: 1;
+    grid-row: 1; 
     margin-left:  80px;
-    width: 300px;
     line-height: 2em;
 }
 
@@ -210,6 +224,9 @@ P{
     border-radius: 90%;
     cursor: pointer;
 }
+
+
+
 
 /* cor da bolinha da roupa */
 .azul {
