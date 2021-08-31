@@ -12,6 +12,8 @@ body{
 .strutura{
     align-content: center;
     display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
     grid-template-columns: minmax(100px, 1fr) 2fr 2fr minmax(100px, 1fr);
     grid-template-areas: 
         "sidnav header header margin" 
@@ -313,7 +315,7 @@ P{
     height: 80px;
     width: 81px;
     text-align: center;
-    box-shadow: 
+    box-shadow: 5px 5px 15px 0px rgb(57, 61, 70, 0.15);
     cursor: pointer;
 }
 
